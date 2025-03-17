@@ -1,8 +1,11 @@
-// Exam-ple
-console.log("Start");
+const users = [
+    { firstName: "john", lastName: 'doe', age: 25 },
+    { firstName: "jane", lastName: 'doe', age: 30 },
+    { firstName: "jim", lastName: 'doe', age: 35 },
+    { firstName: "jill", lastName: 'doe', age: 40 }
+];  
 
-setTimeout(function cb() {
-    console.log("Callback");
-}, 5000);
+// q -> find the list with the full name of the users
 
-console.log("End");
+const fullNames = users.map(x => x.firstName + ' ' + x.lastName);
+console.log(fullNames);
