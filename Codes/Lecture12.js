@@ -7,6 +7,11 @@ function outer() {
     return inner;
 }
 outer()(); //10
+/* `var close = outer();` is calling the `outer` function and assigning the returned inner function to
+the variable `close`. This inner function has access to the variable `a` from the outer function due
+to closure. */
+var close = outer();
+close(); //10
 
 // parameter
 function outer(b) {
@@ -32,7 +37,7 @@ function outest(){
     return outer;
 }
 let a = 100; //conflicting name -> doesnt matter the inner function still refers to the outer env var a, and this is different variable
-var close = outest()("helloworld");
+var close = outest()("helloworld"); // 10 helloworld 20
 close();
 
 // data hiding & encapsulation

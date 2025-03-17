@@ -1,6 +1,6 @@
 function x() {
     var i = 1;
-    setTimeout(function() {
+    setTimeout(function() {// first arg -> clbck func, second arg -> time in ms
         console.log(i);
     }, 1000);
     console.log("abcd"); // it prints this first and then wait for 1 sec and print i
@@ -26,7 +26,7 @@ function a() {
         }, i*1000);
     }
 }
-//a(); // 1 2 3 4 5 ->correct output
+a(); // 1 2 3 4 5 ->correct output
 
 //You cant use let you have to use var
 function b() {

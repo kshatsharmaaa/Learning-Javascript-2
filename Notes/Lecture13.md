@@ -6,7 +6,7 @@ Doesnt have their own identity
 This will result out to be a syntax error
 It looks like a function statement but it has no name
 but a function statement should have a name so this is a invalid syntax
-Use : these are used in a place where functions are used as a value
+Use : these are used in a place where functions are used as a value/parameters
 you can see in function expression after var b = there is a anonymous function
 
 # Function Statement VS Function Expression VS Function Declaration?

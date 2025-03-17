@@ -1,5 +1,5 @@
 # Closures ?
-see example js tries to find a in func a and then to its lexial parent x and prints the value -> this is what closure is.
+see example js tries to find a in func y and then to its lexial parent x and prints the value -> this is what closure is.
 Closure means a function bundled together along with its lexical environment/scope
 
 In javascript, we can assign variables to a function, we can pass one function into another function call and we can also return a function to the function, this is where closure comes into the picture.

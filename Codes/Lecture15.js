@@ -6,6 +6,7 @@ setTimeout(function cb() {
 }, 5000);
 
 console.log("End");
+// Output : Start -> End -> Callback
 
 // eg two
 console.log("start");
