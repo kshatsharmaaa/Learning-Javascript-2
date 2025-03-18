@@ -1,11 +1,13 @@
-const users = [
-    { firstName: "john", lastName: 'doe', age: 25 },
-    { firstName: "jane", lastName: 'doe', age: 30 },
-    { firstName: "jim", lastName: 'doe', age: 35 },
-    { firstName: "jill", lastName: 'doe', age: 40 }
-];  
+const GITHUB_API = "https://api.github.com/users/kshatsharmaaa";
 
-// q -> find the list with the full name of the users
+const user = fetch(GITHUB_API) // this is a browser api, it will return a promise
+// promise object is returned by the fetch api
 
-const fullNames = users.map(x => x.firstName + ' ' + x.lastName);
-console.log(fullNames);
+// this has a promise state and a promise result
+// promise state is pending, promise result is undefined
+
+console.log(user); // this will print the promise object -> Promise {<pending>}
+
+user.then(function (data) {
+    console.log(data); // this will print the actual data returned by the api
+});
